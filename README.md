@@ -1,2 +1,34 @@
-# Jiraiya
-🐸 Summon the great Toad Sage Jiraiya from Mount Myoboku! Explore an interactive experience with our Discord bot featuring multiple features and AI support. Engage in quizzes, creative storytelling, dynamic roleplay, and more!
+# Jiraiya Discord Bot 🐸
+Summon the Legendary Toad Sage Jiraiya from Mount Myoboku to your Discord server! Explore an interactive experience filled with diverse features and powered by AI. Whether you're a fan of anime, roleplay, quizzes, or creative storytelling, Jiraiya brings a world of possibilities to your server.
+
+## Features
+- 🐸 Summon Toad Sage: Channel the wisdom of Jiraiya with the !summon command and experience his one-of-a-kind greetings and interactions.  
+- 🧠 Anime Quiz: Test your knowledge of various anime worlds with the !quiz function, which generates challenging quizzes to challenge even the most seasoned otaku.  
+- 📜 Creative Storytelling: Craft captivating stories with Jiraiya's Scroll, blending creativity with beloved characters. Please note, these stories explore mature themes and might not suit all audiences.  
+- 💬 Dynamic Roleplay: Engage in roleplay conversations as your favorite anime characters using the Create Chat feature, diving into lively interactions.
+- 😄 AI Messages/Reactions: Jiraiya is really engaged in the chat. If he enjoys your message, he might respond with a reaction or reply. Remember, Jiraiya will reply when you mention him in a message.
+
+## Usage
+1. Invite the Jiraiya Bot to your Discord server.
+2. Use the provided commands to summon Jiraiya and explore the range of functionalities.
+3. Be mindful of the mature themes in the !scroll function and ensure they align with your server's audience.
+
+## Documentation/Commands
+For in-depth instructions, a detailed list of commands, and more, please refer to the [official documentation](https://myfolder.notion.site/Jiraiya-cb7abd98ba3f498a80901255d510b234?pvs=4).
+
+## Installation
+To set up the Jiraiya Bot locally, follow these steps:
+
+1. Ensure you have Python 3.10+ installed.
+2. Clone the repository using `git clone https://github.com/ZG4RBU/Jiraiya.git`.
+3. Install the necessary modules listed in requirements.txt by running pip install -r requirements.txt.
+4. Create a new bot on the Discord Developers Portal, assign it the required permissions, and copy your bot token.
+5. Replace DISCORD_TOKEN in main.py with your actual Discord bot token.
+6. Execute main.py to run the bot.
+
+## Contributing
+Contributions are warmly welcomed! Whether you have ideas, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
+
+Embark on an adventure through various anime worlds. Summon Jiraiya, test your knowledge, create captivating stories, and engage in dynamic roleplay with the Jiraiya Discord Bot. Join us in embracing the diverse spirit of different universes and let the adventures unfold!
+
+Note: This project is under active development, with continuous enhancements to provide more exciting experiences on Discord.
