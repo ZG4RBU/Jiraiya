@@ -1,0 +1,254 @@
+{   "Naruto": [
+        {
+            "sex": "Male",
+            "superpower": "Rasengan",
+            "hobby": "pulling pranks",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Shadow Clone Jutsu",
+            "partner": ["Sakura-Chan","Ino-San","Hinata-Chan","Tsunade-Sama","Kaguya-Sama","Shizune-San","Hanabi-Kun","Temari-San"],
+            "male_sidekick": ["Sasuke","Kakashi Sensei","Guy Sensei","Iruka Sensei","Kiba","Shikamaru","Choji","Shino","3rd Hokage","Pervy Sage"],
+            "female_sidekick": ["Ino-San","Sakura-Chan","Tsunade-Sama","Hinata-Chan","Shizune-San","Temari-San"],
+            "villains": ["Orochimaru","Madara","Tobi","Obito"]
+        }
+    ],
+
+    "Sasuke": [
+        {
+            "sex": "Male",
+            "superpower": "Chidori",
+            "hobby": "killing people",
+            "hometown": "Konohagakure",
+            "MacGuffin": "revenge",
+            "partner": ["Sakura","Ino","Hinata","Karin","Tsunade","Mei Terumi","Kaguya"],
+            "male_sidekick": ["Kakashi Sensei","Naruto","Iruka Sensei","Kiba","Shikamaru","Suigetsu","Jugo"],
+            "female_sidekick": ["Ino","Sakura","Tsunade","Hinata","Shizune","Karin"],
+            "villains": ["Orochimaru","Danzo","Deidara","Madara","Tobi","Obito"]
+        }
+    ],
+    
+    "Sakura": [
+        {
+            "sex": "Female",
+            "superpower": "Medical Ninjutsu",
+            "hobby": "Trivia games",
+            "hometown": "Konohagakure",
+            "MacGuffin": "small breasts",
+            "partner": ["Sasuke-Kun","Naruto-Kun","Shikamaru","Kiba","Kakashi Sensei","Jiraiya-Sama","Sai"],
+            "male_sidekick": ["Kakashi Sensei","Naruto-Kun","Sasuke-Kun","Iruka Sensei","Kiba","Shikamaru","Choji","Shino","Guy Sensei","Jiraiya-Sama","Sai"],
+            "female_sidekick": ["Ino","Tsunade","Hinata","Shizune","Temari"],
+            "villains": ["Orochimaru","Madara","Tobi","Sasori","Obito"]
+        }
+    ],
+    
+    "Kakashi Sensei": [
+        {
+            "sex": "Male",
+            "superpower": "Sharingan",
+            "hobby": "reading a book",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Jiraiya's book",
+            "partner": ["Sakura-Chan","Ino-Chan","Hinata-Chan","Tsunade-Sama","Kaguya","Kushina-San","Rin","Kurenai-San","Shizune-San"],
+            "male_sidekick": ["Naruto","Sasuke","Iruka","Kiba","Shikamaru","Choji","Shino","Guy", "Rock Lee","3rd Hokage","Jiraiya-Sama"],
+            "female_sidekick": ["Ino-Chan","Sakura-Chan","Hinata-Chan","Tsunade-Sama","Shizune-San","Kurenai-San"],
+            "villains": ["Orochimaru","Madara","Tobi","Pain","Itachi","Obito"]
+        }
+    ],
+    
+    "Ino": [
+        {
+            "sex": "Female",
+            "superpower": "Mind Body Switch Technique",
+            "hobby": "watering flowers",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Sasuke",
+            "partner": ["Sasuke-Kun","Naruto-Kun","Shikamaru-Chan","Kiba-Chan","Kakashi Senpai","Jiraiya-Sama","Sai-Kun","Choji","Iruka Sensei"],
+            "male_sidekick": ["Kakashi Senpai","Naruto-Kun","Sasuke-Kun","Kiba-Chan","Shikamaru-Chan","Jiraiya-Sama","Sai-Kun","Choji","Shino","Asuma Sensei","Iruka Sensei"],
+            "female_sidekick": ["Sakura-Chan","Tsunade-Sama","Hinata","Shizune","Temari"],
+            "villains": ["Orochimaru","Madara","Tobi","Obito","Pain"]
+        }
+    ],
+    
+    "Hinata": [
+        {
+            "sex": "Female",
+            "superpower": "Byakugan",
+            "hobby": "eating ramen",
+            "hometown": "Konohagakure",
+            "MacGuffin": "big boobs",
+            "partner": ["Naruto-Kun","Sasuke-Kun","Shikamaru-Chan","Kiba-Kun","Kakashi Senpai","Jiraiya-Sama","Iruka Sensei","Toneri"],
+            "male_sidekick": ["Kakashi Senpai","Naruto-Kun","Sasuke-Kun","Iruka Sensei","Kiba-Kun","Shikamaru-Chan","Choji","Shino","Guy Sensei","Akamaru","Jiraiya-Sama"],
+            "female_sidekick": ["Sakura-Chan","Ino","Tsunade-Sama","Shizune","Temari","Kurenai Sensei"],
+            "villains": ["Orochimaru","Madara","Tobi","Obito","Pain"]
+        }
+    ],
+    
+    "Neji": [
+        {
+            "sex": "Male",
+            "superpower": "Byakugan",
+            "hobby": "meditation",
+            "hometown": "Konohagakure",
+            "MacGuffin": "spying on girls",
+            "partner": ["Sakura","Ino","Hinata-Sama","Tsunade-Sama","Kaguya","Kurenai-Sama","Tenten-San"],
+            "male_sidekick": ["Naruto","Sasuke","Iruka Sensei","Kiba","Shikamaru","Choji","Shino","Guy Sensei", "Rock Lee","Akamaru"],
+            "female_sidekick": ["Ino","Hinata-Sama","Tsunade-Sama","Shizune","Kurenai-Sama","Temari","Tenten-San"],
+            "villains": ["Orochimaru","Madara","Tobi","Pain","Obito"]
+        }
+    ],
+    
+    "Rock Lee": [
+        {
+            "sex": "Male",
+            "superpower": "The Eight Inner Gates",
+            "hobby": "intense training",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Sakura's chest",
+            "partner": ["Sakura-Chan","Ino-Chan","Hinata-Chan","Tsunade-Sama","Tenten-Kun"],
+            "male_sidekick": ["Naruto","Sasuke","Iruka Sensei","Kiba","Shikamaru","Choji","Shino","Guy Sensei","Akamaru","Neji-San"],
+            "female_sidekick": ["Sakura-Chan","Ino-Chan","Hinata-Chan","Tsunade-Sama","Shizune-San","Kurenai-Sama","Temari","Tenten-Kun"],
+            "villains": ["Orochimaru","Madara","Tobi","Pain","Obito"]
+        }
+    ],
+    
+    "Temari": [
+        {
+            "sex": "Female",
+            "superpower": "Wind Release",
+            "hobby": "eating ice cream",
+            "hometown": "Village Hidden by Sand",
+            "MacGuffin": "fishnet",
+            "partner": ["Naruto-Kun","Sasuke-Kun","Gaara-Kun","Shikamaru-Kun","Kakashi Senpai","Jiraiya-Sama"],
+            "male_sidekick": ["Naruto-Kun","Sasuke-Kun","Gaara-Kun","Shikamaru-Chan","Kakashi Senpai","Jiraiya-Sama","Iruka Senpai","Kiba-Kun","Choji","Shino","Guy Sensei","Akamaru"],
+            "female_sidekick": ["Sakura-Chan","Ino","Tsunade-Sama","Shizune","Temari"],
+            "villains": ["Orochimaru","Madara","Tobi","Obito","Pain"]
+        }
+    ],
+    
+    "Konan": [
+        {
+            "sex": "Female",
+            "superpower": "Paper Clone",
+            "hobby": "origami",
+            "hometown": "Amegakure",
+            "MacGuffin": "blowjob",
+            "partner": ["Naruto-Kun","Sasuke","Pain","Kakashi Senpai","Jiraiya Sensei","Itachi"],
+            "male_sidekick": ["Naruto-Kun","Sasuke","Pain","Kakashi Senpai","Jiraiya Sensei","Itachi","Deidara","Sasori"],
+            "female_sidekick": ["Sakura","Ino","Hinata","Tsunade","Shizune","Temari"],
+            "villains": ["Tobi"]
+        }
+    ],
+    
+    "Sai": [
+        {
+            "sex": "Male",
+            "superpower": "Ink Mist Technique",
+            "hobby": "drawing",
+            "hometown": "Konohagakure",
+            "MacGuffin": "big dick",
+            "partner": ["Sakura-Chan","Ino-Chan","Hinata"],
+            "male_sidekick": ["Naruto","Sasuke","Kakashi Sensei","Kiba","Shikamaru","Choji","Shino","Guy Sensei", "Rock Lee","Akamaru"],
+            "female_sidekick": ["Sakura-Chan","Ino-Chan","Hinata","Tsunade-Sama","Shizune","Kurenai-Sama","Temari"],
+            "villains": ["Orochimaru","Madara","Tobi","Pain","Obito"]
+        }
+    ],
+    
+    "Shizune": [
+        {
+            "sex": "Female",
+            "superpower": "Medical Ninjutsu",
+            "hobby": "helping Tsunade",
+            "hometown": "Konohagakure",
+            "MacGuffin": "getting wet",
+            "partner": ["Naruto-Kun","Sasuke-Kun","Shikamaru","Kiba","Kakashi-San","Jiraiya-Kun","Sai","Iruka","Rock Lee","Gaara","Orochimaru"],
+            "male_sidekick": ["Naruto-Kun","Shikamaru","Kiba","Kakashi-San","Jiraiya-Kun","Sai","Iruka","Rock Lee","Gaara","Orochimaru","Shino","Guy"],
+            "female_sidekick": ["Sakura-Chan","Hinata","Tsunade-Sama","Ino","Temari"],
+            "villains": ["Tobi","Obito","Pain","Madara","Kabuto"]
+
+        }
+    ],
+    
+    "Itachi": [
+        {
+            "sex": "Male",
+            "superpower": "Mangekyo Sharingan",
+            "hobby": "fingering",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Genjutsu",
+            "partner": ["Sakura","Ino","Hinata","Tsunade","Kurenai","Shizune","Konan"],
+            "male_sidekick": ["Kisame","Deidara","Pain","Tobi","Sasori","Hidan","kakuzu","Jiraiya","3rd Hokage","Sasuke"],
+            "female_sidekick": ["Konan","Sakura","Kurenai","Tsunade","Shizune"],
+            "villains": ["Orochimaru","Madara","Pain","Obito","Danzo"]
+        }
+    ],
+    
+    "Minato": [
+        {
+            "sex": "Male",
+            "superpower": "Speed",
+            "hobby": "reading Jiraiya's novels",
+            "hometown": "Konohagakure",
+            "MacGuffin": "9 tail fox",
+            "partner": ["Sakura","Hinata","Tsunade","Shizune","Kushina"],
+            "male_sidekick": ["Kakashi","Obito","Guy","3rd Hokage","Jiraiya Sensei"],
+            "female_sidekick": ["Kushina","Sakura","Tsunade","Rin","Hinata"],
+            "villains": ["Kaguya","Madara","Tobi"]
+        }
+    ],
+    
+    "Pervy Sage": [
+        {
+            "sex": "Male",
+            "superpower": "Sage mode",
+            "hobby": "spying on women while they bathe",
+            "hometown": "Konohagakure",
+            "MacGuffin": "Tsunade’s breasts",
+            "partner": ["Sakura","Ino","Hinata","Tsunade-Chan","Shizune-Chan","Kushina","Kurenai","Konan"],
+            "male_sidekick": ["Kakashi","Guy","Sarutobi Sensei","Naruto","Shikamaru"],
+            "female_sidekick": ["Tsunade-Chan","Shizune-Chan","Sakura","Ino","Hinata"],
+            "villains": ["Tobi","Pain","Itachi","Orochimaru"]
+        }
+    ],
+
+    "Tsunade": [
+        {
+            "sex": "Female",
+            "superpower": "Medical Ninjutsu",
+            "hobby": "gambling",
+            "hometown": "Konohagakure",
+            "MacGuffin": "huge boobs",
+            "partner": ["Naruto-Kun","Sasuke-Kun","Shikamaru","Kiba","Kakashi-San","Jiraiya-Kun","Sai","Iruka","Rock Lee","Gaara","Orochimaru"],
+            "male_sidekick": ["Kakashi-San","Naruto-Kun","Iruka","Kiba","Shikamaru","Shino","Sai","Guy","Jiraiya-Kun","Orochimaru","Rock Lee"],
+            "female_sidekick": ["Sakura-Chan","Hinata","Shizune-San","Ino","Temari"],
+            "villains": ["Tobi","Obito","Pain","Madara","Kabuto"]
+        }
+    ],
+    
+    "Orochimaru": [
+        {
+            "sex": "Male",
+            "superpower": "Snake Summoning Jutsu",
+            "hobby": "experiments",
+            "hometown": "Konohagakure",
+            "MacGuffin": "his female body",
+            "partner": ["Sakura","Ino","Hinata","Tsunade-Kun","Shizune-Chan","Kurenai"],
+            "male_sidekick": ["Jiraiya","Sarutobi Sensei","Kabuto","Kakashi","Guy"],
+            "female_sidekick": ["Tsunade-Kun","Anko","Sakura","Shizune-Chan","Hinata","Ino","Karin"],
+            "villains": ["Tobi","Pain","9 tail fox","Madara","Kaguya"]
+
+        }
+    ],
+    
+    "Kaguya": [
+        {
+            "sex": "Female",
+            "superpower": "Space-Time Ninjutsu",
+            "hobby": "Sleeping",
+            "hometown": "Otsutsuki",
+            "MacGuffin": "Sexy Clone Jutsu",
+            "partner": ["Sasuke","Naruto","Kakashi"],
+            "male_sidekick": ["Naruto","Sasuke","Kakashi","Gaara"],
+            "female_sidekick": ["Sakura","Hinata","Ino","Temari"],
+            "villains": ["Zetsu","Madara","Obito"]
+        }
+    ]
+}

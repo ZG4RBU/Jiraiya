@@ -1,0 +1,27 @@
+{
+    "jiraiyas_language": "ka",
+    "summon": {
+        "en": [
+            "Hi! I'm Jiraiya, the great toad sage from Mount Myoboku!",
+            "Oh.. sorry my right arm is tired"
+        ],
+        "ka": [
+            "გაუმარჯოს! მე ვარ სანნინი ჯირაია დიდი მიობუკოს მთიდან",
+            "ოუ დიდი ბოდიში.. მარჯვენა ხელი დამეღალა და სხვა დროს იყოს"
+        ]
+    },
+    "quiz": {
+        "en": {
+            "correct": "Correct!",
+            "incorrect": "Sorry, that is incorrect."
+        },
+        "ka": {
+            "correct": "პასუხი სწორია!",
+            "incorrect": "პასუხი არასწორია."
+        }
+    },
+    "help": {
+        "en": "`Jiraiya (自来也) is one of Konohagakure's Sannin. Famed as a hermit and pervert of stupendous ninja skill, Jiraiya travelled the world in search of knowledge that would help his friends, the various novels he wrote, and, posthumously, the world in its entirety - knowledge that would be passed on to his godson and final student, Naruto Uzumaki.`\n\nOpen the special scroll to summon Master Jiraiya:\nhttps://myfolder.notion.site/Jiraiya-cb7abd98ba3f498a80901255d510b234?pvs=4",
+        "ka": "`ჯირაია (自来也, ჯირაია) კონოჰაგაკურეს ერთ-ერთი სანნინი იყო. მთელი ცხოვრება იგი აღთქმულ მოსწავლეს დაეძებდა, რომელმაც, წინასწარმეტყველების თანახმად, მსოფლიო უნდა შეცვალოს. ცუნადესა და ოროჩიმარუსთან ერთად ჯირაია მესამე ჰოკაგეს მოსწავლე იყო. იგი ამეს ობლების, მეოთხე ჰოკაგესა და ნარუტო უზუმაკის ყოფილი სენსეია, გარდა ამისა, იგი ნარუტოს ნათლიაცაა. ჯირაიას მიერაა დაწერილი ამბავი მეტისმეტად მამაც შინობზე და პოპულარული პორნოგრაფიული ნაწარმოები იჩა იჩა.`\n\nგახსენით გრაგნილი ჯირაიას გამოსაძახებლად:\nhttps://myfolder.notion.site/Jiraiya-cb7abd98ba3f498a80901255d510b234?pvs=4"
+    }
+}
