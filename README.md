@@ -27,8 +27,8 @@ To set up the Jiraiya Bot locally, follow these steps:
 6. Execute `main.py` to run the bot.
 
 ## Contributing
-Contributions are warmly welcomed! Whether you have ideas, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
+Contributions are warmly welcomed! Whether you have ideas, bug reports, or feature requests, please feel free to open an issue or submit a pull request.  
 
-Embark on an adventure through various anime worlds. Summon Jiraiya, test your knowledge, create captivating stories, and engage in dynamic roleplay with the Jiraiya Discord Bot. Join us in embracing the diverse spirit of different universes and let the adventures unfold!
+Embark on an adventure through various anime worlds. Summon Jiraiya, test your knowledge, create captivating stories, and engage in dynamic roleplay with the Jiraiya Discord Bot. Join us in embracing the diverse spirit of different universes and let the adventures unfold!  
 
 Note: This project is under active development, with continuous enhancements to provide more exciting experiences on Discord.
