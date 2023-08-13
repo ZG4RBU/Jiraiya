@@ -21,10 +21,10 @@ To set up the Jiraiya Bot locally, follow these steps:
 
 1. Ensure you have Python 3.10+ installed.
 2. Clone the repository using `git clone https://github.com/ZG4RBU/Jiraiya.git`.
-3. Install the necessary modules listed in requirements.txt by running pip install -r requirements.txt.
+3. Install the necessary modules listed in `requirements.txt` by running `pip install -r requirements.txt`.
 4. Create a new bot on the Discord Developers Portal, assign it the required permissions, and copy your bot token.
-5. Replace DISCORD_TOKEN in main.py with your actual Discord bot token.
-6. Execute main.py to run the bot.
+5. Replace `DISCORD_TOKEN` in `main.py` with your actual Discord bot token.
+6. Execute `main.py` to run the bot.
 
 ## Contributing
 Contributions are warmly welcomed! Whether you have ideas, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
