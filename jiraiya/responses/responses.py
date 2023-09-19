@@ -3,7 +3,8 @@ import random
 from jiraiya.utilities.json_utils import read_json, update_json_dict
 
 
-def get_response(message: str) -> str:
+
+def get_response(message:str) -> str:
     """ 
     returns Jiraiya' response to the message
 

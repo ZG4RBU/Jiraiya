@@ -3,14 +3,21 @@ from jiraiya.responses.response_quiz import get_quiz
 from jiraiya.utilities.json_utils import read_json
 
 
-def parameters_quiz(message:str) -> tuple[str]:
 
-    #set default parameters
+def parameters_quiz(user_message:str) -> tuple[str]:
+    """
+    Extract and return parameters for the quiz from the user's message.
+
+    :param user_message: The user's message input.
+    :return: A tuple containing the anime and message language parameters.
+    """
+
+    # Set default parameters
     anime, message_lang = "Naruto", "en"
 
-    parameters = message.split("-")
+    parameters = user_message.split("-")
     for parameter in parameters:
-        # skip the command
+        # skip the parameter
         if "!" in parameter:
             continue
 
@@ -38,39 +45,56 @@ class QuizView(discord.ui.View):
     @discord.ui.button(label='1')
     async def button1(self, interaction: discord.Interaction, button: discord.ui.Button):
         if self.quiz_answer == '1':
-            await interaction.response.send_message(self.message_correct)
+            reply_message = self.message_correct
         else:
-            await interaction.response.send_message(self.message_incorrect)
+            reply_message = self.message_incorrect
+
+        await interaction.response.send_message(f"{interaction.user.mention} {reply_message}")
 
     @discord.ui.button(label='2')
     async def button2(self, interaction: discord.Interaction, button: discord.ui.Button):
         if self.quiz_answer == '2':
-            await interaction.response.send_message(self.message_correct)
+            reply_message = self.message_correct
         else:
-            await interaction.response.send_message(self.message_incorrect)
+            reply_message = self.message_incorrect
+
+        await interaction.response.send_message(f"{interaction.user.mention} {reply_message}")
 
     @discord.ui.button(label='3')
     async def button3(self, interaction: discord.Interaction, button: discord.ui.Button):
         if self.quiz_answer == '3':
-            await interaction.response.send_message(self.message_correct)
+            reply_message = self.message_correct
         else:
-            await interaction.response.send_message(self.message_incorrect)
+            reply_message = self.message_incorrect
+
+        await interaction.response.send_message(f"{interaction.user.mention} {reply_message}")
 
     @discord.ui.button(label='4')
     async def button4(self, interaction: discord.Interaction, button: discord.ui.Button):
         if self.quiz_answer == '4':
-            await interaction.response.send_message(self.message_correct)
+            reply_message = self.message_correct
         else:
-            await interaction.response.send_message(self.message_incorrect)
+            reply_message = self.message_incorrect
+
+        await interaction.response.send_message(f"{interaction.user.mention} {reply_message}")
 
 
 async def send_quiz(message, user_message:str, is_private:bool):
+    """
+    Send a quiz to the user or channel based on the user's input.
 
-    anime,message_lang = parameters_quiz(user_message)
-    quiz,quiz_answer = get_quiz(anime,message_lang)
+    :param message: The Discord message object.
+    :param user_message: The user's input message.
+    :param is_private: Boolean indicating whether the quiz should be sent as a private message.
+    :return: None
+    """
+
+    anime, message_lang = parameters_quiz(user_message)
+    quiz, quiz_answer = await get_quiz(anime, message_lang)
 
     view = QuizView(quiz_answer)
-    await message.author.send(quiz,view=view) if is_private else await message.channel.send(quiz,view=view)
 
-
-
+    if is_private:
+        await message.author.send(quiz, view=view)
+    else:
+        await message.channel.send(quiz, view=view)

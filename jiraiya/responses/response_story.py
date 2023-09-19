@@ -1,12 +1,13 @@
-from googletranslate import translate
 import random
-from time import sleep
-from jiraiya.storytime.storytime import generate_story
-from jiraiya.utilities.utilities import write_file, get_emojis, split_text, shorten_text_line_length
+import asyncio
+from googletranslate import translate
+from jiraiya.responses.storytime import generate_story
+from jiraiya.utilities.utilities import write_file, generate_nude_emojis, split_text, shorten_text_line_length
 from jiraiya.utilities.json_utils import read_json
 
 
-def translate_story_text(story:str,lang:str) -> str:
+
+async def translate_story_text(story:str, lang:str) -> str:
     """
     Google translate have 500 character limit for each request.
     So we need to split the story into parts and translate each part separately.
@@ -26,7 +27,7 @@ def translate_story_text(story:str,lang:str) -> str:
         translated_story = translate(story_part, dest=lang, src='en')
 
         translated_story_parts.append(translated_story)
-        sleep(3)
+        await asyncio.sleep(3)
 
     story = "".join(translated_story_parts)
 
@@ -36,49 +37,63 @@ def translate_story_text(story:str,lang:str) -> str:
     return story
 
 
-def translate_story(title:str,story:str,lang:str) -> tuple[str]:
+async def translate_story(title:str, story:str, lang:str) -> tuple[str]:
 
     title = translate(title, dest=lang, src='en')
-    story = translate_story_text(story)
+    story = await translate_story_text(story, lang)
 
     return (title,story)
 
 
-def get_story(message:str,message_lang:str) -> tuple[str]:
-    """ 
-    Returns a story based on the message.
+async def get_story(character_name:str, story_lang:str) -> tuple[str]:
+    """
+    Generate a character-based story and return the story title and file.
+
+    :param character_name: The character's name. If not provided, a random character will be chosen.
+    :param story_lang: The language in which the story should be generated.
+
+    :return: A tuple containing the story title and the name of the story file.
     """
 
-    #get character name
-    character_names = read_json("data/scroll_characters.json")
-    character_names = list(character_names.keys())
+    # Get available character names
+    data_character_names = read_json("data/scroll_characters.json")
+    data_character_names = list(data_character_names.keys())
 
-    for name in character_names:
-        if name.lower() in message:
-            character_name = name
+    random_character = True
+
+    # Match provided character_name with available character names
+    for data_character_name in data_character_names:
+        if data_character_name.lower() == character_name.lower():
+            random_character = False
             break
-        else:
-            character_name = random.choice(character_names)
 
-    # generate story
-    title,story = generate_story(preset="Naruto",character_name=character_name)
+    if random_character:
+        character_name = random.choice(data_character_names)
 
-    #shorten story lenght
+    # Generate the story
+    title,story = await generate_story(preset="Naruto",character_name=character_name.capitalize())
+
+    # Shorten the story length
     story = shorten_text_line_length(story,103)
 
+    # Save story in txt file
     story_file = "eng_story.txt"
     write_file(story_file,story)
 
-    # add emojis to story title
-    emoji = get_emojis()
-    title = f"📜{emoji} {title}"
+    # Translate the story if needed
+    if story_lang != "en":
+        title,story = await translate_story(title,story,lang=story_lang)
 
-    # translate story from English to other language
-    if message_lang != "en":
-        title,story = translate_story(title,story,lang=message_lang)
-
-        story_file = "ka_story.txt"
+        # Save translated story in txt file
+        story_file = "translated_story.txt"
         write_file(story_file,story)
+
+    # Shorten the story length again
+    story = shorten_text_line_length(story,103)
+
+    # Add emoji to the story title
+    emojis = generate_nude_emojis()
+    title = f"📜{emojis} {title}"
 
     return (title,story_file)
 

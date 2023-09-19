@@ -1,10 +1,11 @@
 import discord
 import os
 from dotenv import load_dotenv
-from jiraiya.chatmaker import send_chatmaker_message, chatmaker_add_character, chatmaker_characters_available
+from jiraiya.create_chat.create_chat import create_chat
 from jiraiya.quiz import send_quiz
 from jiraiya.scroll import send_scroll
 from jiraiya.send_messages import send_message, send_gpt_message, send_random_emoji
+
 
 
 def run_discord_bot():
@@ -30,16 +31,10 @@ def run_discord_bot():
         user_message = str(message.content)
 
         if user_message.startswith('/'):
-            if "add" in user_message:
-                await chatmaker_add_character(message, user_message)
-            elif "online" in user_message:
-                await chatmaker_characters_available(message)
-            else:
-                await send_chatmaker_message(message, user_message)
+            await create_chat(message, user_message)
 
         elif user_message.startswith('!') or user_message.startswith('?'):
 
-            user_message = user_message.lower()
             is_private = False if user_message.startswith('!') else True
 
             if "quiz" in user_message:
@@ -55,7 +50,6 @@ def run_discord_bot():
             elif any(x in user_message for x in ["jiraia","Jiraia"]):
                 await send_gpt_message(message, user_message, message_lang="ka", is_latin_ka=True)
             else:
-                #language defaults to English
                 await send_gpt_message(message, user_message)
         else:
             await send_random_emoji(message)
