@@ -1,0 +1,38 @@
+# Virtual Environment
+venv/
+
+# Editor Configurations
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+
+# Pip
+src/
+
+# dotenv
+*.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Output files
+*.txt
+
+# Comma-Separated Values (CSV) Reports
+*.csv
+!requirements.txt
+
+# XLSX Reports
+*.xlsx
+
+# Excluded sites list
+tests/.excluded_sites
+
+# MacOS Folder Metadata File
+.DS_Store
+
+# Vim swap files
+*.swp
