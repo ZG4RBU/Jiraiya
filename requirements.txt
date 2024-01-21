@@ -3,3 +3,4 @@ selenium
 undetected_chromedriver
 googletranslate
 g4f
+dotenv

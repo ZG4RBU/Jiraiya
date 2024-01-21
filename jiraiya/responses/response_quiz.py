@@ -4,14 +4,12 @@ from googletranslate import translate
 
 
 
-async def get_quiz(anime:str, message_lang:str) -> tuple[str]:
+async def generate_quiz(anime:str) -> str:
     """
-    Generate a challenging quiz question related to the specified anime.
+    Generate a quiz for the specified anime.
 
-    :param anime: The name of the anime for which the quiz question is generated.
-    :param message_lang: The language in which the quiz question will be presented.
-    
-    :return: A tuple containing the quiz question and the correct answer index.
+    :param anime: The name of the anime for which the quiz is generated.
+    :return: A string containing the quiz.
     """
 
     quiz_prompt = f"""
@@ -29,10 +27,26 @@ async def get_quiz(anime:str, message_lang:str) -> tuple[str]:
 
     try:
         # Generate quiz using GPT model
-        quiz = g4f.ChatCompletion.create(model='gpt-3.5-turbo', provider=g4f.Provider.DeepAi, messages=[
+        quiz = await g4f.ChatCompletion.create_async(model='gpt-3.5-turbo', provider=g4f.Provider.GptGo, messages=[
                                      {"role": "user", "content": quiz_prompt}])
     except Exception as e:
         print(e)
+    
+    return quiz
+
+
+async def get_quiz(anime:str, message_lang:str) -> tuple[str]:
+    """
+    Generate a challenging quiz question related to the specified anime.
+
+    :param anime: The name of the anime for which the quiz question is generated.
+    :param message_lang: The language in which the quiz question will be presented.
+    
+    :return: A tuple containing the quiz question and the correct answer index.
+    """
+
+    # Generate quiz using GPT model
+    quiz = await generate_quiz(anime)
 
     # Extract quiz elements from generated response
     question = quiz.split("[question]", 1)[-1].split("[question]", 1)[0]
@@ -64,3 +78,11 @@ async def get_quiz(anime:str, message_lang:str) -> tuple[str]:
     jiraiyas_response = f"{question}\n1. {a1}\n2. {a2}\n3. {a3}\n4. {a4}"
 
     return (jiraiyas_response, str(correct_answer))
+
+
+
+if __name__ == '__main__':
+
+    # Generate quiz for Naruto anime
+    quiz = asyncio.run(generate_quiz(anime="Naruto"))
+    print(f"quiz: {quiz}")
