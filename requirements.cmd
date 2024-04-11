@@ -8,6 +8,7 @@ pip install selenium
 pip install undetected_chromedriver
 pip install googletranslate
 pip install g4f
+pip install dotenv
 
 pause
 exit
