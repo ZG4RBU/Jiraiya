@@ -14,7 +14,7 @@ Summon the Legendary Toad Sage Jiraiya from Mount Myoboku to your Discord server
 3. Be mindful of the mature themes in the !scroll function and ensure they align with your server's audience.
 
 ## Documentation/Commands
-For in-depth instructions, a detailed list of commands, and more, please refer to the [official documentation](https://myfolder.notion.site/Jiraiya-cb7abd98ba3f498a80901255d510b234?pvs=4).
+For in-depth instructions, a detailed list of commands, and more, please refer to the [official documentation](https://myfolder.notion.site/Jiraiya-Discord-bot-cb7abd98ba3f498a80901255d510b234).
 
 ## Installation
 To set up the Jiraiya Bot locally, follow these steps:
