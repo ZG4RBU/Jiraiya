@@ -1,4 +1,7 @@
 # Jiraiya Discord Bot 🐸
+
+![archiver_thumbnail](https://i.imgur.com/gfw2Ihe.png)
+
 Summon the Legendary Toad Sage Jiraiya from Mount Myoboku to your Discord server! Explore an interactive experience filled with diverse features and powered by AI. Whether you're a fan of anime, roleplay, quizzes, or creative storytelling, Jiraiya brings a world of possibilities to your server.
 
 ## Features
