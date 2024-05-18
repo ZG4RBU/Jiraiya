@@ -22,7 +22,7 @@ For in-depth instructions, a detailed list of commands, and more, please refer t
 ## Installation
 To set up the Jiraiya Bot locally, follow these steps:
 
-1. Ensure you have Python 3.10+ installed.
+1. Ensure you have Python 3.10+ installed. Note that Python 12 is not supported.
 2. Download the code directly or clone the repository using `git clone https://github.com/ZG4RBU/Jiraiya.git`.
 3. Install the necessary modules listed in `requirements.txt` by running `pip install -r requirements.txt`. Alternatively, on Windows, you can simply run the `requirements.cmd` script.
 4. Make sure you have the latest version of Google Chrome installed. This is required for the Selenium ChromeDriver component.
